@@ -8,8 +8,5 @@ enum Weekend { 'Sat', 'Sun' }
 const WorkDays = []
 
 function isWeekend(day: WorkDay | Weekend): boolean {
-  if (day === Weekend.Sat || day === Weekend.Sun) {
-    return true;
-  }
-  return false;
+  return day === Weekend.Sat || day === Weekend.Sun
 }
